@@ -1,0 +1,18 @@
+.comment-box {
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-box textarea {
+  padding: 0.25rem;
+  width: 100%;
+  resize: none;
+}
+
+.comment-box button {
+  margin-top: 0.5rem;
+}

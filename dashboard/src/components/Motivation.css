@@ -1,0 +1,22 @@
+.motivation {
+  background-color: #fff9e6;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  max-width: 500px;
+  font-style: italic;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+blockquote {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+footer {
+  text-align: right;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
