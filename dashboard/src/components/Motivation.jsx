@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import './Motivation.css'; //styling
+import './Motivation.css';
 
 function Motivation() {
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
 
   useEffect(() => {
-    fetch('https://api.quotable.io/random')
+    fetch('https://zenquotes.io/api/random')
       .then((res) => res.json())
       .then((data) => {
-        setQuote(data.content);
-        setAuthor(data.author);
+        // ZenQuotes returns an array with one object
+        const quoteObj = data[0];
+        setQuote(quoteObj.q);
+        setAuthor(quoteObj.a);
       })
-      .catch((err) => {
+      .catch(() => {
         setQuote('Could not fetch quote. Try again later.');
         setAuthor('');
       });
